@@ -1,8 +1,12 @@
 {
-  "packages": ["bun@1.0.24"],
+  "packages": [
+    "bun@1.0.24",
+    "trunk-io@1.2.7"
+  ],
   "shell": {
     "init_hook": [
-      "bun install"
+      "bun install",
+      "trunk install"
     ],
     "scripts": {
       "test": [
