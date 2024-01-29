@@ -1,0 +1,13 @@
+{
+  "packages": ["bun@1.0.24"],
+  "shell": {
+    "init_hook": [
+      "bun install"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
