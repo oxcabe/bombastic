@@ -17,6 +17,12 @@
     "skipLibCheck": true,
     "strict": true,
     "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+
+    /* Module resolution */
+    "paths": {
+      "bombastic/*": ["./src/*"],
+      "test/*": ["./test/*"],
+    },
+  },
 }
