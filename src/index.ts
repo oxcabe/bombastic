@@ -1,0 +1,1 @@
+export { BOMGenerator } from "./generator";
