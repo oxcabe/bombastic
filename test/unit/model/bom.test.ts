@@ -1,5 +1,5 @@
 import path from "path";
-import { beforeEach, describe, expect, test } from "bun:test";
+import { describe, expect, spyOn, test } from "bun:test";
 import { IfcAPI } from "web-ifc";
 import { BOMObject } from "bombastic/model/bom";
 import { loadIfcFromFile } from "bombastic/utils";
@@ -10,20 +10,24 @@ describe("BOMObject", async () => {
     "./test/fixtures/example.ifc",
   );
 
-  let bomObject: BOMObject;
-
   const ifcApi = new IfcAPI();
   await ifcApi.Init();
 
   const modelId = await loadIfcFromFile(ifcFilePath, ifcApi);
 
-  beforeEach(() => {
-    bomObject = new BOMObject(modelId, ifcApi);
+  describe("constructor", () => {
+    test("should call getProjectName", () => {
+      const bomObject = new BOMObject(modelId, ifcApi);
+
+      expect(bomObject.projectName).toBeDefined();
+    });
   });
 
-  describe("constructor", () => {
-    test("should populate projectName property with the correct value", () => {
-      expect(bomObject.projectName).toStrictEqual("Nombre de proyecto");
+  describe("getProjectName", () => {
+    test("should return the correct project name", () => {
+      const projectName = (BOMObject as any).getProjectName(modelId, ifcApi);
+
+      expect(projectName).toStrictEqual("Nombre de proyecto");
     });
   });
 });

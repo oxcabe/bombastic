@@ -4,9 +4,13 @@ export class BOMObject {
   public readonly projectName: string;
 
   constructor(modelId: number, ifcApi: IfcAPI) {
+    this.projectName = BOMObject.getProjectName(modelId, ifcApi);
+  }
+
+  private static getProjectName = (modelId: number, ifcApi: IfcAPI): string => {
     const projectId = ifcApi.GetLineIDsWithType(modelId, IFCPROJECT).get(0);
     const project = ifcApi.GetLine(modelId, projectId) as IFC2X3.IfcProject;
 
-    this.projectName = project.LongName?.value ?? "";
-  }
+    return project.LongName?.value ?? "";
+  };
 }
