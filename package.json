@@ -4,12 +4,16 @@
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "typedoc": "^0.25.7"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "web-ifc": "0.0.50"
   }
 }
