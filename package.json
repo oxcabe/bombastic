@@ -2,6 +2,7 @@
   "name": "bombastic",
   "module": "index.ts",
   "type": "module",
+  "description": "BOM report generation for IFC files. Supports HTML and PDF reports.",
   "scripts": {
     "build": "bun build-cli && bun bundle",
     "build:cli": "bun build ./src/cli/cli.ts --compile --minify --outfile=./build/bin/bombastic",
@@ -20,5 +21,25 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "web-ifc": "0.0.50"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oxcabe/bombastic.git"
+  },
+  "keywords": [
+    "Report generation",
+    "Tool",
+    "BIM",
+    "Building Information Modeling",
+    "AEC",
+    "Architecture",
+    "Engineering",
+    "Construction",
+    "BOM",
+    "Bill of Materials",
+    "IFC",
+    "Industry Foundation Classes"
+  ],
+  "author": "Óscar Carrasco",
+  "license": "MIT"
 }
