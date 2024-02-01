@@ -10,7 +10,19 @@
     ],
     "scripts": {
       "test": [
-        "bun test"
+        "devbox run test-unit"
+      ],
+      "test-unit": [
+        "bun test unit"
+      ],
+      "build": [
+        "bun run build"
+      ],
+      "build-cli": [
+        "bun run build:cli"
+      ],
+      "build-lib": [
+        "bun run build:bundle"
       ]
     }
   }

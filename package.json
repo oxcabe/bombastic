@@ -2,6 +2,11 @@
   "name": "bombastic",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build": "bun build-cli && bun bundle",
+    "build:cli": "bun build ./src/cli/cli.ts --compile --minify --outfile=./build/bin/bombastic",
+    "build:bundle": "bun scripts/bundle.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/react": "^18.2.48",
