@@ -174,5 +174,5 @@ dist
 # Finder (MacOS) folder config
 .DS_Store
 
-# Build directory
-build
+# Bin directory
+bin
