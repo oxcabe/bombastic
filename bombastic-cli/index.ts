@@ -1,6 +1,6 @@
 import path from "path";
 import { parseArgs } from "util";
-import { BOMGenerator } from "bombastic/generator";
+import { BOMGenerator } from "bombastic";
 
 // Exit when this module is not directly called by Bun
 if (!import.meta.main) {

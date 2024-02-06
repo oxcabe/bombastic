@@ -1,66 +1,8 @@
 {
-  "name": "bombastic",
-  "version": "0.0.0",
-  "description": "BOM report generation for IFC files. Supports HTML and PDF reports.",
-  "author": "Óscar Carrasco",
-  "license": "MIT",
-  "type": "module",
-  "main": "./dist/bombastic.umd.cjs",
-  "module": "./dist/bombastic-node.mjs",
-  "types": "./dist/bombastic.d.ts",
-  "exports": {
-    ".": {
-      "bun": "./index.ts",
-      "node": "./dist/bombastic-node.mjs",
-      "types": "./dist/bombastic.d.ts",
-      "require": "./dist/bombastic.umd.cjs"
-    }
-  },
-  "files": [
-    "dist/",
-    "src/",
-    "index.ts",
-    "!src/cli"
-  ],
-  "scripts": {
-    "build": "bun build:cli && bun build:bundle",
-    "build:cli": "bun build ./src/cli/cli.ts --compile --minify --outfile=./bin/bombastic",
-    "build:bundle": "bun scripts/bundle.ts"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "bun-plugin-dts": "^0.2.1",
-    "typedoc": "^0.25.7"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "web-ifc": "0.0.51"
-  },
-  "browserslist": [
-    "defaults"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oxcabe/bombastic.git"
-  },
-  "keywords": [
-    "Report generation",
-    "Tool",
-    "BIM",
-    "Building Information Modeling",
-    "AEC",
-    "Architecture",
-    "Engineering",
-    "Construction",
-    "BOM",
-    "Bill of Materials",
-    "IFC",
-    "Industry Foundation Classes"
+  "name": "bombastic-monorepo",
+  "private": true,
+  "workspaces": [
+    "bombastic",
+    "bombastic-cli"
   ]
 }

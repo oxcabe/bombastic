@@ -9,20 +9,21 @@
       "trunk install"
     ],
     "scripts": {
-      "test": [
-        "devbox run test-unit"
-      ],
-      "test-unit": [
-        "bun test unit"
-      ],
       "build": [
-        "bun run build"
+        "devbox run build_lib",
+        "devbox run build_cli"
       ],
-      "build-cli": [
-        "bun run build:cli"
+      "build_lib": [
+        "cd bombastic && bun run build"
       ],
-      "build-lib": [
-        "bun run build:bundle"
+      "build_cli": [
+        "cd bombastic-cli && bun run build"
+      ],
+      "test": [
+        "devbox run test_unit"
+      ],
+      "test_unit": [
+        "cd bombastic && bun test unit"
       ]
     }
   }

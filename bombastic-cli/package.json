@@ -1,0 +1,22 @@
+{
+  "name": "bombastic-cli",
+  "private": true,
+  "license": "MIT",
+  "module": "index.ts",
+  "type": "module",
+  "exports": {
+    "bin": "./bin/bombastic"
+  },
+  "scripts": {
+    "build": "bun build ./index.ts --compile --minify --outfile=./bin/bombastic"
+  },
+  "dependencies": {
+    "bombastic": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
