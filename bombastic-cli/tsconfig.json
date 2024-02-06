@@ -18,5 +18,10 @@
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
+
+    /* Module resolution */
+    "paths": {
+      "bombastic": ["../bombastic"],
+    },
   },
 }
