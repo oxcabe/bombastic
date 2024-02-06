@@ -1,12 +1,11 @@
-import path from "path";
 import { beforeEach, describe, expect, test } from "bun:test";
 import { BOMGenerator } from "bombastic/generator";
 
 describe("BOMGenerator", () => {
   let bomGenerator: BOMGenerator;
-  const ifcFilePath = path.resolve(
+  const ifcFilePath = Bun.resolveSync(
+    "test/fixtures/example.ifc",
     process.cwd(),
-    "./test/fixtures/example.ifc",
   );
 
   beforeEach(() => {

@@ -1,13 +1,12 @@
-import path from "path";
 import { describe, expect, spyOn, test } from "bun:test";
 import { IfcAPI } from "web-ifc";
 import { BOMObject } from "bombastic/model/bom";
 import { loadIfcFromFile } from "bombastic/utils";
 
 describe("BOMObject", async () => {
-  const ifcFilePath = path.resolve(
+  const ifcFilePath = Bun.resolveSync(
+    "test/fixtures/example.ifc",
     process.cwd(),
-    "./test/fixtures/example.ifc",
   );
 
   const ifcApi = new IfcAPI();
