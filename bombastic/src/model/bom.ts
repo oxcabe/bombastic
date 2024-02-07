@@ -1,16 +1,13 @@
-import { IFCPROJECT, type IfcAPI, IFC2X3 } from "web-ifc";
+import type { IfcAPI } from "web-ifc";
+import { getProjectName, getObjects } from "bombastic/model/functions";
+import type { Object } from "bombastic/model/properties";
 
 export class BOMObject {
   public readonly projectName: string;
+  public readonly objects: { [index: number]: Object };
 
   constructor(modelId: number, ifcApi: IfcAPI) {
-    this.projectName = BOMObject.getProjectName(modelId, ifcApi);
+    this.projectName = getProjectName(modelId, ifcApi);
+    this.objects = getObjects(modelId, ifcApi);
   }
-
-  private static getProjectName = (modelId: number, ifcApi: IfcAPI): string => {
-    const projectId = ifcApi.GetLineIDsWithType(modelId, IFCPROJECT).get(0);
-    const project = ifcApi.GetLine(modelId, projectId) as IFC2X3.IfcProject;
-
-    return project.LongName?.value ?? "";
-  };
 }

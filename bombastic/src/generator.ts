@@ -1,6 +1,6 @@
 import { IfcAPI } from "web-ifc";
 import { BOMObject } from "./model/bom";
-import { loadIfcFromFile } from "./utils";
+import { loadIfcFromFile } from "./utils/file";
 
 export class BOMGenerator {
   private readonly ifcApi = new IfcAPI();
