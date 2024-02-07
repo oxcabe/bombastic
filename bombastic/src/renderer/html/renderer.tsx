@@ -1,11 +1,18 @@
 import { renderToReadableStream } from "react-dom/server";
 import { BOMObject } from "bombastic/model/bom";
-import { BOMDocument } from "./template/document";
+import { HTMLBOMDocument } from "bombastic/renderer/html/template";
+import type { ExportFormat } from "bombastic/renderer";
 
 export class HTMLRenderer {
-  public toReadableStream = async (bomObject: BOMObject) => {
+  public readonly type: ExportFormat = "html";
+
+  public toReadableStream = async (
+    bomObject: BOMObject,
+  ): Promise<ReadableStream> => {
     const stream = await renderToReadableStream(
-      <BOMDocument bomObject={bomObject} />,
+      <HTMLBOMDocument bomObject={bomObject} />,
     );
+
+    return stream;
   };
 }

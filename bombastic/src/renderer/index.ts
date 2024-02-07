@@ -4,3 +4,5 @@ export type {
   HTMLExportFormat,
   PDFExportFormat,
 } from "./renderer";
+
+export { HTMLRenderer } from "./html/renderer";
