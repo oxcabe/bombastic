@@ -27,6 +27,7 @@ lint:
     - yamllint@1.33.0
 actions:
   enabled:
+    - commitlint
     - trunk-check-pre-push
     - trunk-fmt-pre-commit
 tools:
