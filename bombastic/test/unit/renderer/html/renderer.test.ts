@@ -1,28 +1,11 @@
 import { beforeEach, describe, expect, test } from "bun:test";
-import { IfcAPI } from "web-ifc";
-import { BOMObject } from "bombastic/model/bom";
 import { HTMLRenderer, HTMLRender } from "bombastic/renderer";
-import { loadIfcFromFile } from "bombastic/utils";
+import { createCore } from "test/fixtures/utils";
 
 describe("HTMLRenderer", async () => {
   const renderer = new HTMLRenderer();
-  const ifcFilePath = Bun.resolveSync(
-    "test/fixtures/example.ifc",
-    process.cwd(),
-  );
+  const { bomObject, exampleBOMHTMLFile } = await createCore();
 
-  const ifcApi = new IfcAPI();
-  await ifcApi.Init();
-
-  const modelId = await loadIfcFromFile(ifcFilePath, ifcApi);
-  const bomObject = new BOMObject(modelId, ifcApi);
-
-  const exampleBOMHTMLFilePath = Bun.resolveSync(
-    "test/fixtures/exampleBOM.html",
-    process.cwd(),
-  );
-
-  const exampleBOMHTMLFile = Bun.file(exampleBOMHTMLFilePath);
   const exampleBOMHTMLText = await exampleBOMHTMLFile.text();
 
   describe("HTMLRenderer", async () => {

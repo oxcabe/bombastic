@@ -1,18 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import { loadIfcFromFile } from "bombastic/utils";
-import { IfcAPI } from "web-ifc";
+import { createCore } from "test/fixtures/utils";
 
 describe("utils", () => {
   describe("loadIfcFromFile", () => {
     test("should return the modelId from IfcAPI.OpenModel", async () => {
-      const ifcFilePath = Bun.resolveSync(
-        "test/fixtures/example.ifc",
-        process.cwd(),
-      );
-      const ifcApi = new IfcAPI();
-      await ifcApi.Init();
-
-      const modelId = await loadIfcFromFile(ifcFilePath, ifcApi);
+      const { modelId } = await createCore();
 
       expect(modelId).toBeGreaterThanOrEqual(0);
     });
