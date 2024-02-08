@@ -22,7 +22,7 @@ describe("BOMGenerator", () => {
 
   describe("generate", () => {
     test("should call ifcApi.Init() on first call", async () => {
-      await bomGenerator.generate(ifcFilePath);
+      await bomGenerator.generate(ifcFilePath, "html", "/tmp/bom.html");
       const wasmModule = (bomGenerator as any).ifcApi.wasmModule;
 
       expect(wasmModule).toBeDefined();

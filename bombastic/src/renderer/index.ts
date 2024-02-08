@@ -1,8 +1,10 @@
-export { Renderer } from "./renderer";
 export type {
+  Renderer,
+  Render,
   ExportFormat,
   HTMLExportFormat,
-  PDFExportFormat,
+  // PDFExportFormat,
 } from "./renderer";
 
-export { HTMLRenderer } from "./html/renderer";
+export { createRenderer } from "./renderer";
+export { HTMLRenderer, HTMLRender } from "./html/renderer";
