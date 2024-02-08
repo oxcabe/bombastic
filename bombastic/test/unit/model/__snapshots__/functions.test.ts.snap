@@ -1,0 +1,1160 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`functions getProjectName getObjects should return a structure that matches the snapshot 1`] = `
+{
+  "186": {
+    "globalId": "2idC0G3ezCdhA9WVjWemc$",
+    "ifcType": "IfcWallStandardCase",
+    "materials": [
+      {
+        "name": "Enlucido - Blanco",
+      },
+      {
+        "name": "Ladrillo de cerámica hueco doble",
+      },
+      {
+        "name": "Enlucido - Blanco",
+      },
+    ],
+    "name": "Muro básico:Partición con capa de yeso:163541",
+    "type": "Muro básico:Partición con capa de yeso",
+  },
+  "18740": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$5j",
+    "ifcType": "IfcFurnitureType",
+    "materials": [
+      {
+        "name": "Steel, Chrome Plated",
+      },
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer",
+    "type": "unknown",
+  },
+  "18774": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$4C",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165478",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "18799": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$4D",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165479",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "18819": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$42",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165480",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "18839": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$43",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165481",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "18859": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$6o",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Pine",
+      },
+      {
+        "name": "Laminate, Linen, Matte",
+      },
+    ],
+    "name": "M_Table-Dining Round w Chairs:0915mm Diameter:165592",
+    "type": "M_Table-Dining Round w Chairs:0915mm Diameter",
+  },
+  "18879": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$6p",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165593",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "18899": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$6m",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165594",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "18919": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$6n",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165595",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "18939": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$6s",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165596",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "18959": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$6L",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Pine",
+      },
+      {
+        "name": "Laminate, Linen, Matte",
+      },
+    ],
+    "name": "M_Table-Dining Round w Chairs:0915mm Diameter:165631",
+    "type": "M_Table-Dining Round w Chairs:0915mm Diameter",
+  },
+  "18979": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$1g",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165632",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "18999": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$1h",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165633",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19019": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$1e",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165634",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19039": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$1f",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165635",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19059": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$0F",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Pine",
+      },
+      {
+        "name": "Laminate, Linen, Matte",
+      },
+    ],
+    "name": "M_Table-Dining Round w Chairs:0915mm Diameter:165733",
+    "type": "M_Table-Dining Round w Chairs:0915mm Diameter",
+  },
+  "19079": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$0C",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165734",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19099": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$0D",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165735",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19119": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$02",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165736",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19139": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$03",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165737",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19159": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$3w",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Pine",
+      },
+      {
+        "name": "Laminate, Linen, Matte",
+      },
+    ],
+    "name": "M_Table-Dining Round w Chairs:0915mm Diameter:165776",
+    "type": "M_Table-Dining Round w Chairs:0915mm Diameter",
+  },
+  "19179": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$3x",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165777",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19199": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$3u",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165778",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19219": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$3v",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165779",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19239": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$3_",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165780",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19259": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$3N",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Pine",
+      },
+      {
+        "name": "Laminate, Linen, Matte",
+      },
+    ],
+    "name": "M_Table-Dining Round w Chairs:0915mm Diameter:165821",
+    "type": "M_Table-Dining Round w Chairs:0915mm Diameter",
+  },
+  "19279": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$3K",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165822",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19299": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$3L",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165823",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19319": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$2g",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165824",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19339": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$2h",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165825",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19359": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$2C",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Pine",
+      },
+      {
+        "name": "Laminate, Linen, Matte",
+      },
+    ],
+    "name": "M_Table-Dining Round w Chairs:0915mm Diameter:165862",
+    "type": "M_Table-Dining Round w Chairs:0915mm Diameter",
+  },
+  "19379": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$2D",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165863",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19399": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$22",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165864",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19419": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$23",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165865",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "19439": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$20",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Textile - Bamboo Weave",
+      },
+      {
+        "name": "Steel, Chrome Plated",
+      },
+    ],
+    "name": "M_Chair-Breuer:M_Chair-Breuer:165866",
+    "type": "M_Chair-Breuer:M_Chair-Breuer",
+  },
+  "22474": {
+    "globalId": "2idC0G3ezCdhA9WUvWe$_t",
+    "ifcType": "IfcDoorStyle",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+      {
+        "name": " <Unnamed>",
+      },
+      {
+        "name": " <Unnamed>",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+    ],
+    "name": "Puerta de 1 hoja:80 x 210 cm",
+    "type": "unknown",
+  },
+  "22492": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$$S",
+    "ifcType": "IfcDoor",
+    "materials": [
+      {
+        "name": "Madera - Castaño",
+      },
+    ],
+    "name": "Puerta de 1 hoja:80 x 210 cm:166070",
+    "type": "Puerta de 1 hoja:80 x 210 cm",
+  },
+  "22551": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJ3d",
+    "ifcType": "IfcSlab",
+    "materials": [
+      {
+        "name": "Suelos por defecto",
+      },
+    ],
+    "name": "Suelo:Por defecto - 30 cm:166729",
+    "type": "Suelo:Por defecto - 30 cm",
+  },
+  "22554": {
+    "globalId": "0wQknZQiXEOBcv2M5Gzx_R",
+    "ifcType": "IfcSlabType",
+    "materials": [],
+    "name": "Suelo:Por defecto - 30 cm",
+    "type": "unknown",
+  },
+  "22620": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJ0r",
+    "ifcType": "IfcSlab",
+    "materials": [
+      {
+        "name": "Suelos por defecto",
+      },
+    ],
+    "name": "Suelo:Por defecto - 30 cm:166811",
+    "type": "Suelo:Por defecto - 30 cm",
+  },
+  "22623": {
+    "globalId": "1RTDbCVsLDQOt1n0C8ONVi",
+    "ifcType": "IfcSlabType",
+    "materials": [],
+    "name": "Suelo:Por defecto - 30 cm",
+    "type": "unknown",
+  },
+  "22678": {
+    "globalId": "22q55WkeXCV9I$ZK9x1QBr",
+    "ifcType": "IfcPlateType",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado",
+    "type": "unknown",
+  },
+  "22705": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJUp",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166941",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22732": {
+    "globalId": "18B5XxQm59XwAC7imJym5t",
+    "ifcType": "IfcPlateType",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado",
+    "type": "unknown",
+  },
+  "22748": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJUC",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166946",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22772": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJUA",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166948",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22788": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJU8",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166950",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22804": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJVc",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166984",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22820": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJVd",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166985",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22836": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJVa",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166986",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22852": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJVb",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166987",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22868": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJVZ",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166989",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22884": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJVW",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166990",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22900": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJVX",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166991",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22916": {
+    "globalId": "1s5utE$rDDfRKgzV6jUJV_",
+    "ifcType": "IfcPlate",
+    "materials": [
+      {
+        "name": "Cristal",
+      },
+    ],
+    "name": "Panel de sistema:Acristalado:166992",
+    "type": "Panel de sistema:Acristalado",
+  },
+  "22936": {
+    "globalId": "0wQknZQiXEOBcv2M5Gzy2n",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "22980": {
+    "globalId": "3gZpO5KU15lgDkj10h$Acp",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23023": {
+    "globalId": "212zq2L6X92hz69ShsTLFv",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23098": {
+    "globalId": "0gMve50iD09OBKCuk0pLqA",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23141": {
+    "globalId": "0e91LYOeLD1umvq$OJfyF_",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23184": {
+    "globalId": "21MQeJSLr91OtVYZHv4wRq",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "232": {
+    "globalId": "0t2nGKfbH1VhHNoqEzOo50",
+    "ifcType": "IfcWallType",
+    "materials": [],
+    "name": "Muro básico:Partición con capa de yeso",
+    "type": "unknown",
+  },
+  "23227": {
+    "globalId": "1dDvVIJCDCAe9bJAZr6LpG",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23270": {
+    "globalId": "3h7JYbUvL63xHM6M0gd7ZA",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23313": {
+    "globalId": "0Vb_yivgn1xPPiROKe$waD",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23420": {
+    "globalId": "0qE8hALen8wRB8vRvytTTW",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23463": {
+    "globalId": "1guK0CrRzFYP9_o3bM6qoN",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23602": {
+    "globalId": "2ooFqYUTz3s9yYc1jZ4x$s",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23645": {
+    "globalId": "1r$$N61T5DAuUAq_7nn2t1",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23688": {
+    "globalId": "2wrQh2Uxb38ep5govN18x6",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23747": {
+    "globalId": "2pFZenn1bDyQfOQdmax7ku",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23790": {
+    "globalId": "31boqruN944B9nFUHGEyLm",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "23849": {
+    "globalId": "1g$RxLvkX2zesUOAWGMNk6",
+    "ifcType": "IfcMemberType",
+    "materials": [
+      {
+        "name": " <Unnamed>",
+      },
+    ],
+    "name": "Montante rectangular:Montante rectangular - 5 x 10 cm",
+    "type": "unknown",
+  },
+  "294": {
+    "globalId": "2idC0G3ezCdhA9WVjWemcy",
+    "ifcType": "IfcWallStandardCase",
+    "materials": [
+      {
+        "name": "Enlucido - Blanco",
+      },
+      {
+        "name": "Ladrillo de cerámica hueco doble",
+      },
+      {
+        "name": "Enlucido - Blanco",
+      },
+    ],
+    "name": "Muro básico:Partición con capa de yeso:163542",
+    "type": "Muro básico:Partición con capa de yeso",
+  },
+  "338": {
+    "globalId": "2idC0G3ezCdhA9WVjWemcz",
+    "ifcType": "IfcWallStandardCase",
+    "materials": [
+      {
+        "name": "Enlucido - Blanco",
+      },
+      {
+        "name": "Ladrillo de cerámica hueco doble",
+      },
+      {
+        "name": "Enlucido - Blanco",
+      },
+    ],
+    "name": "Muro básico:Partición con capa de yeso:163543",
+    "type": "Muro básico:Partición con capa de yeso",
+  },
+  "6471": {
+    "globalId": "2idC0G3ezCdhA9WUvWemXk",
+    "ifcType": "IfcWindowStyle",
+    "materials": [
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm",
+    "type": "unknown",
+  },
+  "6518": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$V2",
+    "ifcType": "IfcWindow",
+    "materials": [
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm:164008",
+    "type": "Ventana simple:100 x 100 cm",
+  },
+  "6563": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$Pp",
+    "ifcType": "IfcWindow",
+    "materials": [
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm:164121",
+    "type": "Ventana simple:100 x 100 cm",
+  },
+  "6595": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$PM",
+    "ifcType": "IfcWindow",
+    "materials": [
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm:164156",
+    "type": "Ventana simple:100 x 100 cm",
+  },
+  "6627": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$O_",
+    "ifcType": "IfcWindow",
+    "materials": [
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm:164180",
+    "type": "Ventana simple:100 x 100 cm",
+  },
+  "6659": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$O$",
+    "ifcType": "IfcWindow",
+    "materials": [
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm:164181",
+    "type": "Ventana simple:100 x 100 cm",
+  },
+  "6691": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$OA",
+    "ifcType": "IfcWindow",
+    "materials": [
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm:164192",
+    "type": "Ventana simple:100 x 100 cm",
+  },
+  "6723": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$OB",
+    "ifcType": "IfcWindow",
+    "materials": [
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm:164193",
+    "type": "Ventana simple:100 x 100 cm",
+  },
+  "6755": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$O8",
+    "ifcType": "IfcWindow",
+    "materials": [
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm:164194",
+    "type": "Ventana simple:100 x 100 cm",
+  },
+  "6787": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$O9",
+    "ifcType": "IfcWindow",
+    "materials": [
+      {
+        "name": "Vidrio",
+      },
+      {
+        "name": "Madera - Castaño",
+      },
+      {
+        "name": "Piedra - Gris",
+      },
+    ],
+    "name": "Ventana simple:100 x 100 cm:164195",
+    "type": "Ventana simple:100 x 100 cm",
+  },
+  "7758": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$57",
+    "ifcType": "IfcFurnitureType",
+    "materials": [
+      {
+        "name": "Laminate, Linen, Matte",
+      },
+      {
+        "name": "Pine",
+      },
+    ],
+    "name": "M_Table-Dining Round w Chairs:0915mm Diameter",
+    "type": "unknown",
+  },
+  "7792": {
+    "globalId": "2idC0G3ezCdhA9WVjWe$4F",
+    "ifcType": "IfcFurnishingElement",
+    "materials": [
+      {
+        "name": "Pine",
+      },
+      {
+        "name": "Laminate, Linen, Matte",
+      },
+    ],
+    "name": "M_Table-Dining Round w Chairs:0915mm Diameter:165477",
+    "type": "M_Table-Dining Round w Chairs:0915mm Diameter",
+  },
+}
+`;

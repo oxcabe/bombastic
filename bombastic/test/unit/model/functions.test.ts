@@ -19,15 +19,10 @@ describe("functions", async () => {
     });
 
     describe("getObjects", async () => {
-      // Load fixture getObjects expected result
-      const fixtureObject = await Bun.file(
-        Bun.resolveSync("test/fixtures/exampleObjects.json", process.cwd()),
-      ).json();
-
-      test("should return a structure that contains expected objects", () => {
+      test("should return a structure that matches the snapshot", () => {
         const objects = getObjects(modelId, ifcApi);
 
-        expect(objects).toStrictEqual(fixtureObject);
+        expect(objects).toMatchSnapshot();
       });
     });
   });

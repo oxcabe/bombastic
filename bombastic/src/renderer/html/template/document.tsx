@@ -21,7 +21,7 @@ export const HTMLBOMDocument = ({ bomObject }: HTMLBOMDocumentProps) => {
   );
 };
 
-const HTMLBOMHead = ({ title }: HTMLBOMHeadProps) => {
+export const HTMLBOMHead = ({ title }: HTMLBOMHeadProps) => {
   return (
     <head>
       <title>{`BOM Report - ${title}`}</title>
@@ -29,7 +29,7 @@ const HTMLBOMHead = ({ title }: HTMLBOMHeadProps) => {
   );
 };
 
-const HTMLBOMBody = ({ bomObject }: HTMLBOMBodyProps) => {
+export const HTMLBOMBody = ({ bomObject }: HTMLBOMBodyProps) => {
   const title = bomObject.projectName;
   const objects = bomObject.objects;
 
