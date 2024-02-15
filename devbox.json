@@ -14,16 +14,16 @@
         "devbox run build_cli"
       ],
       "build_lib": [
-        "cd bombastic && bun run build"
+        "cd packages/bombastic && bun run build"
       ],
       "build_cli": [
-        "cd bombastic-cli && bun run build"
+        "cd packages/bombastic-cli && bun run build"
       ],
       "test": [
         "devbox run test_unit"
       ],
       "test_unit": [
-        "cd bombastic && bun test unit"
+        "cd packages/bombastic && bun test unit"
       ]
     }
   }

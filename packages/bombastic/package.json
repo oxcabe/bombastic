@@ -1,25 +1,23 @@
 {
-  "name": "bombastic",
+  "name": "bombastic-ifc",
   "version": "0.0.0",
   "description": "BOM report generation for IFC files. Supports HTML and PDF reports.",
   "author": "Óscar Carrasco",
   "license": "MIT",
   "type": "module",
-  "main": "./dist/bombastic.umd.cjs",
-  "module": "./dist/bombastic-node.mjs",
-  "types": "./dist/bombastic.d.ts",
   "exports": {
-    ".": {
-      "bun": "./index.ts",
-      "node": "./dist/bombastic-node.mjs",
-      "types": "./dist/bombastic.d.ts",
-      "require": "./dist/bombastic.umd.cjs"
-    }
+    "bun": "./index.ts",
+    "node": "./dist/bombastic-node.mjs",
+    "types": "./dist/bombastic.d.ts",
+    "browser": "./dist/bombastic.umd.cjs",
+    "import": "./dist/bombastic-node.mjs",
+    "default": "./dist/bombastic.umd.cjs"
   },
   "files": [
     "dist/",
     "src/",
-    "index.ts"
+    "index.ts",
+    "tsconfig.json"
   ],
   "scripts": {
     "build": "bun scripts/bundle.ts"
