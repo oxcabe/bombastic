@@ -1,0 +1,9 @@
+{
+  "always-link-local": false,
+  "packages": {
+    "*": {
+      "release-type": "node",
+      "draft": true
+    }
+  }
+}

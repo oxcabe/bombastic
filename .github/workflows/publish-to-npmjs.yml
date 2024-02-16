@@ -1,0 +1,26 @@
+# .github/workflows/publish-to-npmjs.yml
+# This workflow publishes new releases to https://www.npmjs.com.
+name: Publish package to npmjs
+permissions:
+  contents: read
+on:
+  release:
+    types: [released]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: publish
+    steps:
+      - name: Download and extract release assets
+        run: |
+          gh release download ${{ github.ref }} -p bombastic-${{ github.ref }}.tar.gz
+          tar zxvf bombastic-${{ github.ref }}.tar.gz
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.11.1
+          registry-url: https://registry.npmjs.org
+      - run: npm publish
+        working-directory: ./bombastic/
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

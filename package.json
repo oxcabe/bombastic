@@ -1,8 +1,8 @@
 {
   "name": "bombastic-monorepo",
   "private": true,
+  "license": "MIT",
   "workspaces": [
-    "bombastic",
-    "bombastic-cli"
+    "packages/*"
   ]
 }
