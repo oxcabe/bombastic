@@ -1,0 +1,22 @@
+# .github/workflows/release-please.yml
+# This workflow handles the release-please system that manages releasing new versions.
+# See: https://github.com/googleapis/release-please
+name: Run release-please
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    environment: publish
+    steps:
+      - uses: google-github-actions/release-please-action@v4.0.2
+        id: release
+        with:
+          command: manifest
+          token: ${{secrets.RELEASE_TOKEN}}
+          default-branch: main

@@ -1,0 +1,29 @@
+# .github/workflows/upload-build-to-release.yml
+# This workflow generates package and CLI tool builds.
+# Then, it uploads them to the latest release.
+name: Upload build to latest release
+on:
+  release:
+    types: [created]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout to latest release tag
+        uses: actions/checkout@v4.1.1
+        with:
+          ref: ${{ github.ref }}
+      - name: Install devbox environment
+        uses: jetpack-io/devbox-install-action@v0.7.0
+      - name: Build packages
+        run: devbox run build
+      - name: Compress and upload build output to release
+        run: |
+          tar zvcf bombastic-${{ github.ref }}.tar.gz packages/bombastic/
+          cp packages/bombastic-cli/bin/bombastic \
+            bombastic-cli-${{ github.ref }}-x86_64
+          gh release upload ${{ github.ref }} \
+            bombastic-${{ github.ref }}.tar.gz \
+            bombastic-cli-${{ github.ref }}-x86_64.tar.gz
