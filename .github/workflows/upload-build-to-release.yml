@@ -4,7 +4,7 @@
 name: Upload build to latest release
 on:
   release:
-    types: [created]
+    types: [published]
 permissions:
   contents: write
 jobs:

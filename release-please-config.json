@@ -4,6 +4,14 @@
     ".": {
       "release-type": "node",
       "draft": true
+    },
+    "packages/bombastic": {
+      "release-type": "node",
+      "draft": true
+    },
+    "packages/bombastic-cli": {
+      "release-type": "node",
+      "draft": true
     }
   }
 }
