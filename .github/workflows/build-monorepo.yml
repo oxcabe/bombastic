@@ -1,0 +1,42 @@
+# .github/workflows/build-monorepo.yml
+# This workflow builds all repository projects.
+# It is used as a required check for approving PRs.
+# When called from another workflow, its output can be uploaded as artifacts.
+name: Build monorepo
+permissions: read-all
+on:
+  workflow_call:
+    inputs:
+      build_tag:
+        required: false
+        type: string
+    outputs:
+      run_id:
+        description: Workflow run ID
+        value: ${{ github.run_id }}
+  pull_request:
+    branches:
+      - "**"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+        with:
+          ref: ${{ inputs.build_tag }}
+      - name: Install devbox environment
+        uses: jetpack-io/devbox-install-action@v0.8.0
+      - name: Run build
+        run: devbox run build
+      - name: Archive packages/bombastic build
+        if: inputs.build_tag
+        uses: actions/upload-artifact@v4.3.1
+        with:
+          name: bombastic-${{ inputs.build_tag }}
+          path: packages/bombastic/
+      - name: Archive packages/bombastic-cli build
+        if: inputs.build_tag
+        uses: actions/upload-artifact@v4.3.1
+        with:
+          name: bombastic-cli-${{ inputs.build_tag }}-x86_64
+          path: packages/bombastic-cli/bin/bombastic

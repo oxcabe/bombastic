@@ -1,5 +1,5 @@
 # .github/workflows/upload-build-to-release.yml
-# This workflow generates package and CLI tool builds.
+# This workflow generates monorepo builds.
 # Then, it uploads them to the latest release.
 name: Upload build to latest release
 on:
@@ -10,20 +10,26 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      artifact_run_id: ${{ steps.build_upload.outputs.run_id }}
     steps:
       - name: Checkout to latest release tag
         uses: actions/checkout@v4.1.1
         with:
           ref: ${{ github.ref }}
-      - name: Install devbox environment
-        uses: jetpack-io/devbox-install-action@v0.7.0
-      - name: Build packages
-        run: devbox run build
-      - name: Compress and upload build output to release
+      - name: Build monorepo and upload artifacts
+        id: build_upload
+        uses: ./github/workflows/build-monorepo.yml
+        with:
+          build_tag: ${{ github.ref }}
+  upload:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download bombastic build artifact
+        run: gh run download ${{ needs.build.outputs.artifact_run_id }}
+      - name: Upload artifacts to release
         run: |
-          tar zvcf bombastic-${{ github.ref }}.tar.gz packages/bombastic/
-          cp packages/bombastic-cli/bin/bombastic \
-            bombastic-cli-${{ github.ref }}-x86_64
           gh release upload ${{ github.ref }} \
-            bombastic-${{ github.ref }}.tar.gz \
-            bombastic-cli-${{ github.ref }}-x86_64.tar.gz
+            bombastic-${{ github.ref }}.zip \
+            bombastic-cli${{ github.ref }}-x86_64

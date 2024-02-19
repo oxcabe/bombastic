@@ -4,17 +4,20 @@ name: Publish package to npmjs
 permissions:
   contents: read
 on:
-  release:
-    types: [released]
+  workflow_run:
+    workflows: [Upload build to latest release]
+    types: [completed]
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
     environment: publish
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Download and extract release assets
         run: |
-          gh release download ${{ github.ref }} -p bombastic-${{ github.ref }}.tar.gz
-          tar zxvf bombastic-${{ github.ref }}.tar.gz
+          gh run download ${{ github.event.workflow_run.id }}
+          unzip bombastic-*.zip
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:

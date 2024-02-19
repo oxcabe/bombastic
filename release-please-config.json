@@ -1,17 +1,13 @@
 {
+  "group-pull-request-title-pattern": "chore: release bombastic ${version}",
   "always-link-local": false,
   "packages": {
-    ".": {
-      "release-type": "node",
-      "draft": true
-    },
     "packages/bombastic": {
-      "release-type": "node",
-      "draft": true
+      "package-name": "bombastic",
+      "release-type": "node"
     },
     "packages/bombastic-cli": {
-      "release-type": "node",
-      "draft": true
+      "release-type": "node"
     }
   }
 }
