@@ -9,8 +9,6 @@ const outDir = path.resolve(cwd, "./dist/");
 const baseBundleConfig: BuildConfig = {
   // TODO: get entryPoint from package.json "module" field
   entrypoints: [path.resolve(cwd, "./index.ts")],
-  minify: true,
-  splitting: true,
   outdir: outDir,
   plugins: [dts()],
 };
