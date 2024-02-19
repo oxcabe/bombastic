@@ -1,5 +1,6 @@
 {
-  "group-pull-request-title-pattern": "chore: release bombastic ${version}",
+  "plugins": ["node-workspace", "sentence-case"],
+  "separate-pull-requests": true,
   "always-link-local": false,
   "packages": {
     "packages/bombastic": {
@@ -7,6 +8,7 @@
       "release-type": "node"
     },
     "packages/bombastic-cli": {
+      "package-name": "bombastic-cli",
       "release-type": "node"
     }
   }
