@@ -1,15 +1,17 @@
 import path from "path";
+import { renameSync } from "fs";
 import type { BuildConfig } from "bun";
 import dts from "bun-plugin-dts";
 
 const cwd = process.cwd();
+const outDir = path.resolve(cwd, "./dist/");
 
 const baseBundleConfig: BuildConfig = {
   // TODO: get entryPoint from package.json "module" field
   entrypoints: [path.resolve(cwd, "./index.ts")],
   minify: true,
   splitting: true,
-  outdir: path.resolve(cwd, "./dist/"),
+  outdir: outDir,
   plugins: [dts()],
 };
 
@@ -31,3 +33,6 @@ const bundleConfigs = [browserBundleConfig, nodeBundleConfig];
 for (const bundleConfig of bundleConfigs) {
   await Bun.build(bundleConfig);
 }
+
+// Rename declaration file
+renameSync(`${outDir}/index.d.ts`, `${outDir}/bombastic.d.ts`);
