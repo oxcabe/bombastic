@@ -9,7 +9,7 @@ on:
     types: [completed]
     branches: [main]
 jobs:
-  build:
+  publish_to_npmjs:
     runs-on: ubuntu-latest
     environment: publish
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
