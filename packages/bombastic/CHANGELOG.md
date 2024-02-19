@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.1](https://github.com/oxcabe/bombastic/compare/bombastic-v0.0.0...bombastic-v0.0.1) (2024-02-19)
+
+
+### Bug Fixes
+
+* **bombastic:** Rename declaration file generated from build ([6a368ce](https://github.com/oxcabe/bombastic/commit/6a368ce6c1e51970fdfa56aa95cf0fde57453e17))
+
 ## 0.0.0 (2024-02-19)
 
 
