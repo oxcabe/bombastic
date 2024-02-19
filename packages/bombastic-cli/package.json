@@ -11,7 +11,7 @@
     "build": "bun build ./index.ts --compile --minify --outfile=./bin/bombastic"
   },
   "dependencies": {
-    "bombastic-ifc": "0.0.0"
+    "bombastic-ifc": "0.0.2"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -19,5 +19,5 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "version": "0.0.0"
+  "version": "0.0.1"
 }
