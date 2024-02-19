@@ -1,5 +1,5 @@
 {
-  "plugins": ["node-workspace", "sentence-case"],
+  "plugins": ["sentence-case"],
   "separate-pull-requests": true,
   "always-link-local": false,
   "packages": {
