@@ -19,7 +19,7 @@ jobs:
           ref: ${{ github.ref }}
       - name: Build monorepo and upload artifacts
         id: upload_build
-        uses: ./github/workflows/build-monorepo.yml
+        uses: ./.github/workflows/build-monorepo.yml
         with:
           build_tag: ${{ github.ref }}
   upload_release_assets:
