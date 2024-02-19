@@ -1,5 +1,11 @@
 # Changelog
 
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * bombastic-ifc bumped from 0.0.0 to 0.0.1
+
 ## 0.0.0 (2024-02-19)
 
 
