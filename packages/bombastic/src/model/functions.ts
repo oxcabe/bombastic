@@ -10,6 +10,12 @@ import {
 } from "web-ifc";
 import type { Material, Object } from "bombastic/model/properties";
 
+/**
+ * Retrieves the project name from the IFC file.
+ * @param modelId Numeric ID of the IFC model.
+ * @param ifcApi  web-ifc IfcAPI object.
+ * @returns The name of the project represented as a string.
+ */
 export const getProjectName = (modelId: number, ifcApi: IfcAPI): string => {
   const [projectId] = ifcApi.GetLineIDsWithType(modelId, IFCPROJECT);
 
@@ -23,6 +29,12 @@ export const getProjectName = (modelId: number, ifcApi: IfcAPI): string => {
   return projectName;
 };
 
+/**
+ * Retrieves IFC objects related to materials from the IFC file.
+ * @param modelId Numeric ID of the IFC model.
+ * @param ifcApi  web-ifc IfcAPI object.
+ * @returns Structure of Object entities indexed by the EXPRESS format ID.
+ */
 export const getObjects = (
   modelId: number,
   ifcApi: IfcAPI,
@@ -72,6 +84,13 @@ export const getObjects = (
   return objects;
 };
 
+/**
+ * Retrieves IFC materials from a IFC material relations entity.
+ * @param relation IFC entity representing the relations of a material.
+ * @param modelId Numeric ID of the IFC model.
+ * @param ifcApi  web-ifc IfcAPI object.
+ * @returns The list of Material objects referenced by the relation.
+ */
 const getMaterialsFromRelation = (
   relation: IFC2X3.IfcRelAssociatesMaterial,
   modelId: number,
