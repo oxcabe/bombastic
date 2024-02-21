@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/oxcabe/bombastic/compare/bombastic-cli-v0.0.0...bombastic-cli-v0.1.0) (2024-02-21)
+
+
+### Features
+
+* **bombastic:** Add documentation, issue and PR templates ([#18](https://github.com/oxcabe/bombastic/issues/18)) ([2e3b616](https://github.com/oxcabe/bombastic/commit/2e3b6167cb365ecaf6205ae406aa730038d75a75))
+
 ## 0.0.0 (2024-02-19)
 
 
