@@ -1,6 +1,6 @@
 {
   "name": "bombastic-ifc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "BOM report generation for IFC files. Supports HTML and PDF reports.",
   "author": "Óscar Carrasco",
   "license": "MIT",
