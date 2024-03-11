@@ -1,30 +1,29 @@
 {
   "packages": [
-    "bun@1.0.24",
-    "trunk-io@1.2.7"
+    "trunk-io@1.2.7",
+    "deno@1.40.5"
   ],
   "shell": {
     "init_hook": [
-      "bun install",
       "trunk install"
     ],
     "scripts": {
-      "build": [
-        "devbox run build_lib",
-        "devbox run build_cli"
-      ],
-      "build_lib": [
-        "cd packages/bombastic && bun run build"
-      ],
-      "build_cli": [
-        "cd packages/bombastic-cli && bun run build"
-      ],
-      "test": [
-        "devbox run test_unit"
-      ],
-      "test_unit": [
-        "cd packages/bombastic && bun test unit"
-      ]
+      // "build": [
+      //   "devbox run build_lib",
+      //   "devbox run build_cli"
+      // ],
+      // "build_lib": [
+      //   "cd packages/bombastic && bun run build"
+      // ],
+      // "build_cli": [
+      //   "cd packages/bombastic-cli && bun run build"
+      // ],
+      // "test": [
+      //   "devbox run test_unit"
+      // ],
+      // "test_unit": [
+      //   "cd packages/bombastic && bun test unit"
+      // ]
     }
   }
 }

@@ -1,20 +1,23 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "bun@1.0.24": {
-      "last_modified": "2024-01-22T00:24:37Z",
-      "resolved": "github:NixOS/nixpkgs/5f5210aa20e343b7e35f40c033000db0ef80d7b9#bun",
+    "deno@1.40.5": {
+      "last_modified": "2024-02-24T23:06:34Z",
+      "resolved": "github:NixOS/nixpkgs/9a9dae8f6319600fa9aebde37f340975cab4b8c0#deno",
       "source": "devbox-search",
-      "version": "1.0.24",
+      "version": "1.40.5",
       "systems": {
         "aarch64-darwin": {
-          "store_path": "/nix/store/lr3caf9f2dj4z1qg0vnrnfxdypk18r0d-bun-1.0.24"
+          "store_path": "/nix/store/pg6jrk1rbs4yb6cscllw4mvf13cxxiv3-deno-1.40.5"
         },
         "aarch64-linux": {
-          "store_path": "/nix/store/4lbllwpvds7v0b7ki11y1lfx1npqrz9g-bun-1.0.24"
+          "store_path": "/nix/store/4p6qg8smnpksm47xa5rcv0iz655kilml-deno-1.40.5"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/9wq9vik9f5bjwhp37dwbw5pmk5jyz86j-deno-1.40.5"
         },
         "x86_64-linux": {
-          "store_path": "/nix/store/177jkmr8r90v2w7las8bcn4d90q3balz-bun-1.0.24"
+          "store_path": "/nix/store/pa7b1np3zwiqn4rafps2dbpsh273b8sn-deno-1.40.5"
         }
       }
     },
